@@ -1,0 +1,2 @@
+0 draw
+1 erase
