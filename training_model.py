@@ -2,12 +2,9 @@ import time
 import cv2
 import mediapipe as mp
 from cvzone.HandTrackingModule import HandDetector
-from cvzone.ClassificationModule import Classifier
 import numpy as np
-import pandas as pd
 import math
-import tensorflow as tf
-import joblib
+
 
 
 class DrawingApp:
@@ -17,7 +14,7 @@ class DrawingApp:
         self.detector = HandDetector(maxHands=1)
         self.offset = 20
         self.labels = ['draw', 'erase']
-        self.folder = "Data/erase"
+        self.folder = "imagedata/erase"
         self.count = 0
         self.imgsize = 300
 
